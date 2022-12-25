@@ -1,5 +1,7 @@
 import styles from '../styles/Home.module.css'
 
-export const About = () => {
+const About = () => {
   return <div className={styles.container}>About Page</div>
 }
+
+export default About
