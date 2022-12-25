@@ -60,7 +60,7 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <div>hello world!!</div>
+          <div>hello Hisa!!</div>
         </div>
       </main>
     </>
