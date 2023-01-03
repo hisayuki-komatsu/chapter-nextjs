@@ -21,3 +21,20 @@ const SSR: NextPage<Props> = ({ message }) => {
     </div>
   )
 }
+
+// getServerSidePropsはページへのリクエストがある度に実行される
+export const getServerSideProps: GetServerSideProps<Props> = async (
+  context,
+) => {
+  const timestamp = new Date().toLocaleString()
+  const message = `${timestamp}にこのページのgetServerSideProprsが実行されました`
+  console.log(message)
+
+  return {
+    props: {
+      message,
+    },
+  }
+}
+
+export default SSR
