@@ -1,7 +1,22 @@
+import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.css'
 
 const Home = () => {
-  return <div className={styles.container}>Hello Hisa!!</div>
+  const router = useRouter()
+  const onSubmit = () => router.push('/ssr')
+  const reload = () => router.reload()
+
+  return (
+    <>
+      <div className={styles.container}>
+        <span>Hello Hisa!!</span>
+        <button onClick={onSubmit}>Go To SSR</button>
+      </div>
+      <div>
+        <button onClick={reload}>reload</button>
+      </div>
+    </>
+  )
 }
 
 export default Home

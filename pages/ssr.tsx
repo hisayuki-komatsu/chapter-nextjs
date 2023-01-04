@@ -1,11 +1,15 @@
 import { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 type Props = {
   message: string
 }
 
 const SSR: NextPage<Props> = ({ message }) => {
+  const router = useRouter()
+  const onBack = () => router.back()
+
   return (
     <div>
       <Head>
@@ -17,6 +21,7 @@ const SSR: NextPage<Props> = ({ message }) => {
           このページはサーバーサイドレンダリングによってアクセス時にサーバーで描画されたページです
         </p>
         <p>{message}</p>
+        <button onClick={onBack}>Go Back</button>
       </main>
     </div>
   )
