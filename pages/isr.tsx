@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 
 type Props = {
@@ -19,3 +19,17 @@ const ISR: NextPage<Props> = ({ message }) => {
     </div>
   )
 }
+
+export const getStaticProps: GetStaticProps<Props> = async (context) => {
+  const timestamp = new Date().toLocaleString()
+  const message = `${timestamp}にこのページのgetStaticPropsが実行されました`
+
+  return {
+    props: {
+      message,
+    },
+    revalidate: 60,
+  }
+}
+
+export default ISR
