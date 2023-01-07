@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
+// import images
 import HisaDevImg from '../public/images/hisa-dev.png'
 
 const ImageSample: NextPage<void> = (props) => {
