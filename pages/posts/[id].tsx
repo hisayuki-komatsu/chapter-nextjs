@@ -67,7 +67,7 @@ export const getStaticProps: GetStaticProps<Props, PostParams> = async (
 ) => {
   return {
     props: {
-      // paramsにgetStaticPathsで指定した値gあそれぞれ入っている
+      // paramsにgetStaticPathsで指定した値がそれぞれ入っている
       id: context.params!['id'],
     },
   }
