@@ -37,3 +37,6 @@ next-env.d.ts
 
 # github
 .github/*
+
+# storybook
+/storybook-static
