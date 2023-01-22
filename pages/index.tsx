@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router'
 // import styles
 import styles from '../styles/Home.module.css'
+// import components
+import { Text } from './components/commons/text'
 
 const Home = () => {
   const router = useRouter()
@@ -15,6 +17,7 @@ const Home = () => {
       </div>
       <div>
         <button onClick={reload}>reload</button>
+        <Text />
       </div>
     </>
   )
