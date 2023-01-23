@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 // import styles
 import styles from '../styles/Home.module.css'
 // import components
-import { Text } from './components/commons/text'
+import { Text } from '../components/commons/text'
 
 const Home = () => {
   const router = useRouter()

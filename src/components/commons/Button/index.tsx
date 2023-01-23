@@ -1,7 +1,7 @@
 import React from 'react'
-import './button.css'
+import './index.css'
 
-interface ButtonProps {
+interface Props {
   /**
    * Is this the principal call to action on the page?
    */
@@ -33,7 +33,7 @@ export const Button = ({
   backgroundColor,
   label,
   ...props
-}: ButtonProps) => {
+}: Props) => {
   const mode = primary
     ? 'storybook-button--primary'
     : 'storybook-button--secondary'
