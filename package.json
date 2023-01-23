@@ -10,6 +10,9 @@
     "sb": "start-storybook -p 6006",
     "sb:build": "build-storybook"
   },
+  "engines": {
+    "node": "18.13.0"
+  },
   "dependencies": {
     "@next/font": "13.0.7",
     "@types/node": "18.11.15",
