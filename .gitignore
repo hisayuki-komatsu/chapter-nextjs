@@ -35,11 +35,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# github
-.github/*
-
 # storybook
 /storybook-static
+build-storybook.log
 
 # test
 index.test.tsx.snap
