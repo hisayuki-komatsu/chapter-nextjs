@@ -41,3 +41,6 @@ build-storybook.log
 
 # test
 index.test.tsx.snap
+
+# aspida
+/src/api/Autogen
