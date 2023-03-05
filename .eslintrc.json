@@ -9,5 +9,6 @@
         }
       }
     ]
-  }
+  },
+  "ignorePatterns": ["**/Autogen/*", "/src/libs/$path.ts"]
 }

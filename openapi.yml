@@ -9,9 +9,8 @@ paths:
     description: 'description of /api/todo/{id}'
     parameters:
       - schema:
-          type: integer
-          minimum: 1
-          example: 1
+          type: string
+          example: '1'
         name: id
         in: path
         description: Id of an existing todo.
@@ -216,9 +215,9 @@ components:
       description: Todoオブジェクトの共通スキーマ
       properties:
         id:
-          type: integer
+          type: string
           description: ユニークID
-          example: 1
+          example: '1'
           readOnly: true
         title:
           type: string
@@ -244,16 +243,14 @@ components:
           minLength: 1
           nullable: true
         created_at:
-          type: integer
-          format: int64
+          type: string
           description: Todoが作成された時刻（UNIXタイムで単位は秒）
-          example: 1633480000
+          example: '1633480000'
           readOnly: true
         updated_at:
-          type: integer
-          format: int64
+          type: string
           description: Todoが更新された時刻（UNIXタイムで単位は秒）
-          example: 1633480000
+          example: '1633480000'
           readOnly: true
       required:
         - id

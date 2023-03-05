@@ -1,12 +1,21 @@
 import { useRouter } from 'next/router'
-// import components
+import { useEffect } from 'react'
 import { Text } from '../components/commons/Text'
+import { apiClient } from '~/apis/apiClient'
 import { TestPrimaryButton } from '~/components/commons/TestPrimaryButton'
 
 const Home = () => {
   const router = useRouter()
   const onSubmit = () => router.push('/ssr')
   const reload = () => router.reload()
+
+  useEffect(() => {
+    const getTodos = async () => {
+      const todos = await apiClient.api.todos.$get()
+      console.log(todos)
+    }
+    getTodos()
+  }, [])
 
   return (
     <>
