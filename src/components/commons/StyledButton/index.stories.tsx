@@ -1,8 +1,8 @@
-import { ComponentMeta, Story } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
+import { ComponentMeta, Story } from '@storybook/react'
 // import components
-import { StyledButton, Props } from './index'
 import React, { useState } from 'react'
+import { StyledButton, Props } from './index'
 
 export default {
   // グループ名
