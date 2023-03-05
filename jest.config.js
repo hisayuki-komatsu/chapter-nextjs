@@ -8,6 +8,10 @@ const customJestConfig = {
   moduleNameMapper: {
     '~/(.*)$': '<rootDir>/src/$1',
   },
+  setupFilesAfterEnv: [
+    '<rootDir>/jest.setup.ts',
+    '<rootDir>/src/testConfigs/localStorageMock.ts',
+  ],
   testEnvironment: 'jest-environment-jsdom',
 }
 

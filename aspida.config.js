@@ -1,5 +1,5 @@
 module.exports = {
-  input: 'src/api/Autogen',
+  input: 'src/apis/Autogen',
   outputEachDir: true,
   openapi: { inputFile: './openapi.yml' },
 }

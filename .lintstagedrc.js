@@ -13,9 +13,6 @@ const buildPrettierCommand = (filenames) =>
 // const buildStylelintCommand = () => `yarn stylelint:fix`
 
 module.exports = {
-  '*.{js,jsx,ts,tsx}': [
-    buildEslintCommand,
-    buildPrettierCommand,
-    // buildStylelintCommand,
-  ],
+  '*.{js,jsx,ts,tsx}': [buildEslintCommand, buildPrettierCommand],
 }
+// buildStylelintCommand,
