@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint --dir src",
-    "lint:fix": "npm run lint --fix",
+    "lint:fix": "npm run lint --dir src --fix",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "prepare": "husky install",
     "sb": "start-storybook -p 6006",
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@next/font": "13.0.7",
+    "envsafe": "^2.0.3",
     "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
