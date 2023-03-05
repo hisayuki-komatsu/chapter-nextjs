@@ -1,7 +1,7 @@
 // getStaticPathsを使用した複数ページのSSG
+import { ParsedUrlQuery } from 'querystring'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
-import { ParsedUrlQuery } from 'querystring'
 // import hooks
 import { useRouter } from 'next/router'
 

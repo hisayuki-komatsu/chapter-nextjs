@@ -10,12 +10,12 @@ const buildPrettierCommand = (filenames) =>
     .map((f) => path.relative(process.cwd(), f))
     .join(' --file ')}`
 
-const buildStylelintCommand = () => `yarn stylelint:fix`
+// const buildStylelintCommand = () => `yarn stylelint:fix`
 
 module.exports = {
   '*.{js,jsx,ts,tsx}': [
     buildEslintCommand,
     buildPrettierCommand,
-    buildStylelintCommand,
+    // buildStylelintCommand,
   ],
 }

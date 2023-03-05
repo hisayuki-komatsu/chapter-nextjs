@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 // import components
 import { Text } from '../components/commons/Text'
-import { TestPrimaryButton } from '../components/commons/TestPrimaryButton'
+import { TestPrimaryButton } from '~/components/commons/TestPrimaryButton'
 
 const Home = () => {
   const router = useRouter()
